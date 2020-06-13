@@ -8,6 +8,14 @@ h2{
 }
 */
 
+.btnPrimary{
+    margin:50px;
+    background-color:#007bff;
+    border-color: #007bff;
+    color: white;
+    
+}
+
 textarea {
   margin: 10px;
   width: 700px;
@@ -23,6 +31,7 @@ input {
 
 .PanelTitulo {
   background: red;
+  padding-top: 30px;
   text-align: center;
   vertical-align: center;
   color: white;
@@ -41,16 +50,17 @@ input {
   font-size: 50px;
 }
 
-.NombreSubtitulo{
-    margin: 20px;
-    width: 250px;
-    background:rgba(114, 153, 254, 0.5);
-    border-radius: 10px;
-    padding: 20px;
+.NombreSubtitulo {
+  margin-left: 20px;
+  margin-top: 140px;
+  width: 250px;
+  background: rgba(114, 153, 254, 0.4);
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.NombreSubtitulo h2{   
-    font-size: 30px;
+.NombreSubtitulo h2 {
+  font-size: 30px;
 }
 
 /******************************************/
@@ -58,13 +68,12 @@ input {
 /******************************************/
 .PanelSobreMi {
   background: #7299fe;
-
   vertical-align: center;
   color: white;
   position: relative;
   top: 71px;
   left: 100px;
-  height: 250px;
+  height: 280px;
 }
 
 .PanelSobreMi h2 {
@@ -81,17 +90,19 @@ input {
   text-align: initial;
   font-size: 14px;
   font-style: normal;
+  font-family: sans-serif;
 }
 
 .PanelSobreMi button {
-  margin-left: 50px;
-  font-size: 25px;
+  font-family: Helvetica;
   font-style: normal;
+  margin-left: 50px;
+  font-size: 20px;
   background: #d16fff;
-  height: 65px;
+  height: 50px;
   width: 180px;
   color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -107,13 +118,12 @@ input {
 
 .PanelSkills {
   background: #9122ff;
-
   vertical-align: center;
   color: white;
   position: relative;
   top: 71px;
   left: 100px;
-  height: 450px;
+  height: 400px;
 }
 
 .PanelSkills .grid {
