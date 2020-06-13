@@ -58,6 +58,7 @@ input{
 .PanelSobreMi h2{
     font-family: Arial;
     text-align:center;
+    padding: 30px;
 }
 
 .parrafoSobreMi{
@@ -102,36 +103,43 @@ input{
     position:relative;
     top:71px;
     left:100px;
-    height:300px;
+    height:450px;
 }
 
+.PanelSkills .grid   {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
 .PanelSkills h2{
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     color: #26CC4B;
     font-size: 36px;
 }
 
 .bloqueSkills{
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .TituloSkill{
-    font-size: 30px;
+    font-size: 25px;
     margin: 10px;
+    padding: 10px;
 }
 
 .skillBarra{
     background: white;
-    width: 300px;
+    width: 360px;
     height: 30px;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .skillBarraCeleste{
     background: #57EFF9;
-    width: 150px;
+    width: 180px;
     height: 30px;
     border-radius: 20px;
 }
@@ -160,7 +168,10 @@ input{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-/*Clientes*/
+/*******************************************/
+/************   Clientes      **************/
+ /******************************************/
+
 
 .PanelClientes{
     background:#3F4E62;
