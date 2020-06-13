@@ -1,9 +1,24 @@
+body{
+    font-family: Arial;
+}
+
+/*
 h2{
     margin: 0px;
+}
+*/
+
+textarea{
+    margin: 10px;
+    width: 670px;
 }
 
 section{
     width:888px;
+}
+
+input{
+    width: 300px;
 }
 
 .PanelTitulo{
@@ -23,42 +38,48 @@ section{
     font-style: normal;
     font-weight: bold;
     text-align: center;
+    font-size: 50px;
 }
 
+/******************************************/
+/*****           Sobre mi     *************/
+/******************************************/
 .PanelSobreMi{
     background:#7299FE;
-    text-align:center;
+
     vertical-align: center;
     color:white;
     position:relative;
     top:71px;
     left:100px;
-    height:170px;
-    padding: 20px;
+    height:250px;
 }
 
 .PanelSobreMi h2{
     font-family: Arial;
+    text-align:center;
 }
 
-.PanelSobreMi p{
+.parrafoSobreMi{
+    padding: 20px;
+}
+
+.parrafoSobreMi p{
     text-align: initial;
-    font-family: Arial;
-    font-size: 11px;
+    font-size: 14px;
     font-style: normal;
 }
 
 .PanelSobreMi button{
-    align-items: initial;
-    text-align: start;
-    font-family: Arial;
-    font-size: 11px;
+    margin-left: 50px;
+    font-size: 25px;
     font-style: normal;
     background: #D16FFF;
-    height: 40px;
-    width: 80px;
-
+    height: 65px;
+    width: 180px;
+    color: white;
     border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .PanelSobreMi h2{
@@ -67,11 +88,15 @@ section{
     font-size: 36px;
 }
 
+/*********************************************/
+/**************  Panel Skills    *************/
+/*********************************************/
+
 
 
 .PanelSkills{
     background:#9122FF;
-    text-align:center;
+  
     vertical-align: center;
     color:white;
     position:relative;
@@ -82,9 +107,33 @@ section{
 
 
 .PanelSkills h2{
+    text-align: center;
     padding: 10px;
     color: #26CC4B;
     font-size: 36px;
+}
+
+.bloqueSkills{
+    padding: 20px;
+}
+
+.TituloSkill{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.skillBarra{
+    background: white;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.skillBarraCeleste{
+    background: #57EFF9;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
 }
 
 
@@ -134,8 +183,9 @@ section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
-/*Contactos*/
+/**********************************/
+/*******    Contactos   ***********/
+/**********************************/
 .PanelContacto{
     background:#1687A0;
     text-align:center;
@@ -144,7 +194,7 @@ section{
     position:relative;
     top:71px;
     left:100px;
-    height:400px;
+    height:500px;
 }
 
 .PanelContacto h2{
@@ -154,8 +204,8 @@ section{
 }
 
 .PanelContacto input{
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
 }
 
 .PanelContacto button{
