@@ -1,5 +1,5 @@
-body{
-    font-family: Arial;
+body {
+  font-family: Arial;
 }
 
 /*
@@ -8,224 +8,227 @@ h2{
 }
 */
 
-textarea{
-    margin: 10px;
-    width: 670px;
+textarea {
+  margin: 10px;
+  width: 700px;
 }
 
-section{
-    width:888px;
+section {
+  width: 888px;
 }
 
-input{
-    width: 300px;
+input {
+  width: 300px;
 }
 
-.PanelTitulo{
-    background:red;
-    text-align:center;
-    vertical-align: center;
-    color:white;
-    position:relative;
-    top:71px;
-    left:100px;
-    height:300px;
-    background-image: url('../img/fondoTitulo.png');
+.PanelTitulo {
+  background: red;
+  text-align: center;
+  vertical-align: center;
+  color: white;
+  position: relative;
+  top: 71px;
+  left: 100px;
+  height: 300px;
+  background-image: url("../img/fondoTitulo.png");
 }
 
-.PanelTitulo h1{
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    text-align: center;
-    font-size: 50px;
+.PanelTitulo h1 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
 }
 
 /******************************************/
 /*****           Sobre mi     *************/
 /******************************************/
-.PanelSobreMi{
-    background:#7299FE;
+.PanelSobreMi {
+  background: #7299fe;
 
-    vertical-align: center;
-    color:white;
-    position:relative;
-    top:71px;
-    left:100px;
-    height:250px;
+  vertical-align: center;
+  color: white;
+  position: relative;
+  top: 71px;
+  left: 100px;
+  height: 250px;
 }
 
-.PanelSobreMi h2{
-    font-family: Arial;
-    text-align:center;
-    padding: 30px;
+.PanelSobreMi h2 {
+  font-family: Arial;
+  text-align: center;
+  padding: 30px;
 }
 
-.parrafoSobreMi{
-    padding: 20px;
+.parrafoSobreMi {
+  padding: 20px;
 }
 
-.parrafoSobreMi p{
-    text-align: initial;
-    font-size: 14px;
-    font-style: normal;
+.parrafoSobreMi p {
+  text-align: initial;
+  font-size: 14px;
+  font-style: normal;
 }
 
-.PanelSobreMi button{
-    margin-left: 50px;
-    font-size: 25px;
-    font-style: normal;
-    background: #D16FFF;
-    height: 65px;
-    width: 180px;
-    color: white;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.PanelSobreMi button {
+  margin-left: 50px;
+  font-size: 25px;
+  font-style: normal;
+  background: #d16fff;
+  height: 65px;
+  width: 180px;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.PanelSobreMi h2{
-    padding: 10px;
-    color: #26CC4B;
-    font-size: 36px;
+.PanelSobreMi h2 {
+  padding: 10px;
+  color: #26cc4b;
+  font-size: 36px;
 }
 
 /*********************************************/
 /**************  Panel Skills    *************/
 /*********************************************/
 
+.PanelSkills {
+  background: #9122ff;
 
-
-.PanelSkills{
-    background:#9122FF;
-  
-    vertical-align: center;
-    color:white;
-    position:relative;
-    top:71px;
-    left:100px;
-    height:450px;
+  vertical-align: center;
+  color: white;
+  position: relative;
+  top: 71px;
+  left: 100px;
+  height: 450px;
 }
 
-.PanelSkills .grid   {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-.PanelSkills h2{
-    text-align: center;
-    padding: 30px;
-    color: #26CC4B;
-    font-size: 36px;
+.PanelSkills .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.bloqueSkills{
-    padding-left: 20px;
-    padding-right: 20px;
+.PanelSkills h2 {
+  text-align: center;
+  padding: 30px;
+  color: #26cc4b;
+  font-size: 36px;
 }
 
-.TituloSkill{
-    font-size: 25px;
-    margin: 10px;
-    padding: 10px;
+.bloqueSkills {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.skillBarra{
-    background: white;
-    width: 360px;
-    height: 30px;
-    border-radius: 20px;
-    margin: 10px;
+.TituloSkill {
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
 }
 
-.skillBarraCeleste{
-    background: #57EFF9;
-    width: 180px;
-    height: 30px;
-    border-radius: 20px;
+.skillBarra {
+  background: white;
+  width: 360px;
+  height: 30px;
+  border-radius: 20px;
+  margin: 10px;
 }
 
-
-/*Portafolio*/
-.PanelPortaFolio{
-    background:#FFD233;
-    text-align:center;
-    vertical-align: center;
-    color:white;
-    position:relative;
-    top:71px;
-    left:100px;
-    height:400px;
+.skillBarraCeleste {
+  background: #57eff9;
+  width: 180px;
+  height: 30px;
+  border-radius: 20px;
 }
 
-.PanelPortaFolio h2{
-    padding: 20px;
-    color: #00AD84;
-    font-size: 36px;
+/***********************************************/
+/***********     Portafolio            *********/
+/***********************************************/
+
+.PanelPortaFolio {
+  background: #ffd233;
+  text-align: center;
+  vertical-align: center;
+  color: white;
+  position: relative;
+  top: 71px;
+  left: 100px;
+  height: 350px;
 }
 
-.PanelPortaFolio .imagenes   {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+.PanelPortaFolio h2 {
+  padding: 20px;
+  color: #00ad84;
+  font-size: 36px;
+}
+
+.PanelPortaFolio .imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.imagenes {
+  padding: 10px;
+}
 
 /*******************************************/
 /************   Clientes      **************/
- /******************************************/
+/******************************************/
 
-
-.PanelClientes{
-    background:#3F4E62;
-    text-align:center;
-    vertical-align: center;
-    color:white;
-    position:relative;
-    top:71px;
-    left:100px;
-    height:250px;
+.PanelClientes {
+  background: #3f4e62;
+  text-align: center;
+  vertical-align: center;
+  color: white;
+  position: relative;
+  top: 71px;
+  left: 100px;
+  height: 250px;
 }
 
-.PanelClientes h2{
-    padding: 20px;
-    color: #ADFF28;
-    font-size: 36px;
+.PanelClientes h2 {
+  padding: 20px;
+  color: #adff28;
+  font-size: 36px;
 }
 
-.PanelClientes .imagenes   {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+.PanelClientes .imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /**********************************/
 /*******    Contactos   ***********/
 /**********************************/
-.PanelContacto{
-    background:#1687A0;
-    text-align:center;
-    vertical-align: center;
-    color:white;
-    position:relative;
-    top:71px;
-    left:100px;
-    height:500px;
+.PanelContacto {
+  background: #1687a0;
+  text-align: center;
+  vertical-align: center;
+  color: white;
+  position: relative;
+  top: 71px;
+  left: 100px;
+  height: 500px;
 }
 
-.PanelContacto h2{
-    padding: 20px;
-    color: #FF1B1B;
-    font-size: 36px;
+.PanelContacto h2 {
+  padding: 20px;
+  color: #ff1b1b;
+  font-size: 36px;
 }
 
-.PanelContacto input{
-    padding: 15px;
-    margin: 15px;
+.PanelContacto input {
+  padding: 15px;
+  margin: 15px;
 }
 
-.PanelContacto button{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px;
-    color: white;
-    background: #233451;
+.PanelContacto button {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  background: #233451;
 }
