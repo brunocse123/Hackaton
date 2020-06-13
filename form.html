@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <title>Formulario</title>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <label for="">Nombre</label>
+        <input
+          type="text"
+          pattern="[a-zA-Z ]{2,254}"
+          title="Ingrese solo letras"
+          required
+        />
+        <br />
+        <label for="">Apellido</label>
+        <input
+          type="text"
+          pattern="[a-zA-Z ]{2,254}"
+          title="Ingrese solo letras"
+          required
+        />
+        <br />
+        <label for="">Edad</label>
+        <input type="number" min="18" max="80" />
+
+        <br />
+        <label for="sex">Sexo</label>
+        <label>
+          <input type="radio" name="sex" checked />
+          F
+        </label>
+        <label>
+          <input type="radio" name="sex" />
+          M
+        </label>
+        <br />
+
+        <label for="">DNI</label>
+        <input type="text" pattern="[a-zA-Z0-9\s]{8,254}" required />
+        <br />
+
+        <label for="">Email</label>
+        <input type="email" required />
+        <br />
+        <button>Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
+
+<style>
+    main{
+        width: 400px;
+    }
+    label{
+        width: 80px;
+    }
+  body {
+    padding: 50px;
+  }
+  form {
+    padding: 20px;
+    border: PowderBlue 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  input:invalid:focus {
+    border-color: red;
+  }
+
+  input:valid {
+    border-color: green;
+  }
+
+  input[type="search"] {
+    border: 1px dotted #999;
+    border-radius: 0;
+
+    -webkit-appearance: none;
+  }
+</style>
