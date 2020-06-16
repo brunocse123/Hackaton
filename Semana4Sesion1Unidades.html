@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+
+        .divAbsoluta{
+            /*Tamaño Absoluto*/
+            width: 100px;
+            height: 100px;
+            font-size: 40px;
+        }
+
+        .divEM h1{
+            font-size: 32px;
+        }
+
+        .divEM span{
+            font-size: .5em;
+        }
+
+        h2{
+            font-size: 1rem;
+        }
+
+        /*De esta manera se hace que la caja sea responsive*/
+        .caja{
+            width: 100%;
+            max-width: 460px;
+            margin: auto;
+            background-color: orange;
+        }
+
+        .caja > div{
+            background-color: red;
+        }
+
+        .caja .uno{
+            width: 30%;
+        }
+
+        .caja .dos{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="divAbsoluta">
+            div
+        </div>
+        <div class="divEM">
+            <h1>Titulo
+                <span>Texto en relacion al h1</span>
+            </h1>
+        </div>
+        <div>
+            <h2>Titulo Usando REM</h2>
+        </div>
+
+        <div class="caja">
+            <div class="uno">
+                uno
+            </div>
+            <div class="dos">
+                dos
+            </div>
+        </div>
+    </main>
+</body>
+</html>
