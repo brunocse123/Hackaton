@@ -1,19 +1,17 @@
+/*
+Variables Globales
+*/
+
 body {
   font-family: Arial;
+  width: 100%;
 }
-
-/*
-h2{
-    margin: 0px;
-}
-*/
 
 .btnPrimary{
     margin:50px;
     background-color:#007bff;
     border-color: #007bff;
-    color: white;
-    
+    color: white;    
 }
 
 textarea {
@@ -40,6 +38,7 @@ input {
   left: 100px;
   height: 400px;
   background-image: url("../img/fondoTitulo.png");
+  text-shadow: 1px 1px 9px black; 
 }
 
 .PanelTitulo h1 {
@@ -57,6 +56,7 @@ input {
   background: rgba(114, 153, 254, 0.4);
   border-radius: 10px;
   padding: 20px;
+  text-shadow: 1px 3px 0.5px black; 
 }
 
 .NombreSubtitulo h2 {
@@ -128,38 +128,39 @@ input {
 
 .PanelSkills .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .PanelSkills h2 {
   text-align: center;
-  padding: 30px;
+  padding: 3%;
   color: #26cc4b;
   font-size: 36px;
 }
 
 .bloqueSkills {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .TituloSkill {
   font-size: 25px;
-  margin: 10px;
+  margin: 5px;
   padding: 10px;
 }
 
 .skillBarra {
   background: white;
-  width: 360px;
+  width: 100%;
   height: 30px;
   border-radius: 20px;
-  margin: 10px;
 }
 
 .skillBarraCeleste {
   background: #57eff9;
-  width: 180px;
+  width: 60%;
   height: 30px;
   border-radius: 20px;
 }
