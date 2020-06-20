@@ -1,123 +1,95 @@
-/*
-Variables Globales
-*/
+/*************************************************
+              Variables Globales
+**************************************************/
+
+
 
 body {
-  font-family: Arial;
-  width: 100%;
+  font-family: Arial, Helvetica, sans-serif; /*Digo que toda la web tendra esta fuente */  
+  color: white; /*El texto de toda la web sera de color blanco*/
 }
 
-main{
-  width: 100%;
-  max-width: 960px;
-  margin: 0;
-}
-
-
-.btnPrimary{
-    margin:50px;
-    background-color:#007bff;
-    border-color: #007bff;
-    color: white;    
+main {
+  max-width: 960px;/*Ancho a toda la pantalla*/
+  margin: auto;/*Hago que todo el main se ponga en el medio*/
 }
 
 textarea {
-  margin: 10px;
-  width: 700px;
-}
-
-section {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 input {
-  width: 300px;
+  margin: 20%;
 }
 
-.PanelTitulo {
-  background: red;
-  padding-top: 30px;
+h2{
+  font-size: 36px;
   text-align: center;
-  vertical-align: center;
-  color: white;
-  position: relative;
-  top: 71px;
-  left: 100px;
-  height: 400px;
-  background-image: url("../img/fondoTitulo.png");
-  text-shadow: 1px 1px 9px black; 
+  padding: 2% 2% 2% 2%;
 }
 
-.PanelTitulo h1 {
-  font-family: Helvetica;
-  font-style: normal;
-  font-weight: bold;
+p{
+  font-size: 16px;
+}
+
+h1{
   text-align: center;
   font-size: 50px;
+  text-shadow: 1px 1px 9px black;
 }
+
+section{
+  vertical-align: center;
+  padding: 2% 2% 3% 2%;
+
+}
+
+/*Panel Titulo*/
+
+.PanelTitulo {
+  padding: 20px 20px 80px 20px ;
+  background-image: url("../img/fondoTitulo.png");
+}
+
 
 .NombreSubtitulo {
   margin-left: 20px;
   margin-top: 140px;
-  width: 250px;
+  width: 40%;
   background: rgba(114, 153, 254, 0.4);
-  border-radius: 10px;
-  padding: 20px;
-  text-shadow: 1px 3px 0.5px black; 
+  border-radius: 20px;
+  padding: 2%;
+  text-shadow: 1px 3px 0.5px black;
 }
 
-.NombreSubtitulo h2 {
-  font-size: 30px;
-}
 
 /******************************************/
 /*****           Sobre mi     *************/
 /******************************************/
 .PanelSobreMi {
   background: #7299fe;
-  vertical-align: center;
-  color: white;
-  position: relative;
-  top: 71px;
-  left: 100px;
-  height: 280px;
 }
 
+
 .PanelSobreMi h2 {
-  font-family: Arial;
-  text-align: center;
-  padding: 30px;
+  color: #26cc4b;
 }
 
 .parrafoSobreMi {
   padding: 20px;
 }
 
-.parrafoSobreMi p {
-  text-align: initial;
-  font-size: 14px;
-  font-style: normal;
-  font-family: sans-serif;
-}
 
 .PanelSobreMi button {
-  font-family: Helvetica;
-  font-style: normal;
   margin-left: 50px;
   font-size: 20px;
   background: #d16fff;
-  height: 50px;
-  width: 180px;
+  padding: 2% 4% 2% 4%;
   color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.PanelSobreMi h2 {
-  padding: 10px;
-  color: #26cc4b;
-  font-size: 36px;
-}
 
 /*********************************************/
 /**************  Panel Skills    *************/
@@ -125,12 +97,6 @@ input {
 
 .PanelSkills {
   background: #9122ff;
-  vertical-align: center;
-  color: white;
-  position: relative;
-  top: 71px;
-  left: 100px;
-  height: 400px;
 }
 
 .PanelSkills .grid {
@@ -139,10 +105,7 @@ input {
 }
 
 .PanelSkills h2 {
-  text-align: center;
-  padding: 3%;
   color: #26cc4b;
-  font-size: 36px;
 }
 
 .bloqueSkills {
@@ -168,8 +131,21 @@ input {
 .skillBarraCeleste {
   background: #57eff9;
   width: 60%;
-  height: 30px;
+  height: 100%;
   border-radius: 20px;
+  animation-name: MoverSkills;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes MoverSkills {
+  from {
+    width: 20%;
+  }
+
+  to {
+    width: 80%;
+  }
 }
 
 /***********************************************/
@@ -178,19 +154,10 @@ input {
 
 .PanelPortaFolio {
   background: #ffd233;
-  text-align: center;
-  vertical-align: center;
-  color: white;
-  position: relative;
-  top: 71px;
-  left: 100px;
-  height: 350px;
 }
 
 .PanelPortaFolio h2 {
-  padding: 20px;
   color: #00ad84;
-  font-size: 36px;
 }
 
 .PanelPortaFolio .imagenes {
@@ -198,8 +165,38 @@ input {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.figure-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure{
+  overflow: hidden;
+}
+
+@media (min-width: 620px) {
+  figure {
+    column-count: 1;
+    column-gap: 20px;
+  }
+  
+  figure {
+    break-inside: avoid;
+  }
+}
+
+
 .imagenes {
   padding: 10px;
+}
+
+img:hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
 }
 
 /*******************************************/
@@ -208,19 +205,11 @@ input {
 
 .PanelClientes {
   background: #3f4e62;
-  text-align: center;
-  vertical-align: center;
-  color: white;
-  position: relative;
-  top: 71px;
-  left: 100px;
-  height: 250px;
 }
 
 .PanelClientes h2 {
-  padding: 20px;
+
   color: #adff28;
-  font-size: 36px;
 }
 
 .PanelClientes .imagenes {
@@ -228,7 +217,7 @@ input {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.PanelClientes img{
+.PanelClientes img {
   width: 100px;
 }
 
@@ -238,32 +227,24 @@ input {
 .PanelContacto {
   background: #1687a0;
   text-align: center;
-  vertical-align: center;
-  color: white;
-  position: relative;
-  top: 71px;
-  left: 100px;
-  height: 500px;
 }
 
 .PanelContacto h2 {
-  padding: 20px;
+
   color: #ff1b1b;
-  font-size: 36px;
 }
 
 .PanelContacto input {
-  padding: 15px;
+  padding: 2%;
   margin: 15px;
 }
 
 .PanelContacto button {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: bold;
+
   font-size: 20px;
-  padding: 10px;
+  padding: 2% 2% 2% 2%;
   margin: 10px;
   color: white;
   background: #233451;
+  border-radius: 15px;
 }
