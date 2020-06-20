@@ -7,6 +7,13 @@ body {
   width: 100%;
 }
 
+main{
+  width: 100%;
+  max-width: 960px;
+  margin: 0;
+}
+
+
 .btnPrimary{
     margin:50px;
     background-color:#007bff;
@@ -20,7 +27,7 @@ textarea {
 }
 
 section {
-  width: 888px;
+  max-width: 100%;
 }
 
 input {
@@ -220,6 +227,11 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.PanelClientes img{
+  width: 100px;
+}
+
 /**********************************/
 /*******    Contactos   ***********/
 /**********************************/
