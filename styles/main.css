@@ -1,9 +1,6 @@
 /*************************************************
               Variables Globales
 **************************************************/
-
-
-
 body {
   font-family: Arial, Helvetica, sans-serif; /*Digo que toda la web tendra esta fuente */  
   color: white; /*El texto de toda la web sera de color blanco*/
@@ -14,12 +11,11 @@ main {
   margin: auto;/*Hago que todo el main se ponga en el medio*/
 }
 
-textarea {
-  max-width: 80%;
-}
 
-input {
-  margin: 20%;
+h1{
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 1px 1px 9px black;
 }
 
 h2{
@@ -28,29 +24,31 @@ h2{
   padding: 2% 2% 2% 2%;
 }
 
+textarea {
+  max-width: 80%;
+}
+
+input {
+  margin: 20%;
+}
+
 p{
   font-size: 16px;
 }
 
-h1{
-  text-align: center;
-  font-size: 50px;
-  text-shadow: 1px 1px 9px black;
-}
 
 section{
   vertical-align: center;
-  padding: 2% 2% 3% 2%;
-
+  padding: 2% 2% 6% 2%;
 }
 
-/*Panel Titulo*/
-
+/******************************************/
+/**********      Panel Titulo   ***********/
+/******************************************/
 .PanelTitulo {
   padding: 20px 20px 80px 20px ;
   background-image: url("../img/fondoTitulo.png");
 }
-
 
 .NombreSubtitulo {
   margin-left: 20px;
@@ -70,7 +68,6 @@ section{
   background: #7299fe;
 }
 
-
 .PanelSobreMi h2 {
   color: #26cc4b;
 }
@@ -78,7 +75,6 @@ section{
 .parrafoSobreMi {
   padding: 20px;
 }
-
 
 .PanelSobreMi button {
   margin-left: 50px;
@@ -174,6 +170,8 @@ section{
 
 figure{
   overflow: hidden;
+
+  text-align: center;
 }
 
 @media (min-width: 620px) {
@@ -221,9 +219,9 @@ img:hover {
   width: 100px;
 }
 
-/**********************************/
-/*******    Contactos   ***********/
-/**********************************/
+/************************************************/
+/**************    Contactos   ******************/
+/************************************************/
 .PanelContacto {
   background: #1687a0;
   text-align: center;
