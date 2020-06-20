@@ -11,6 +11,15 @@ main {
   margin: auto;/*Hago que todo el main se ponga en el medio*/
 }
 
+section{
+  vertical-align: center;
+  padding: 2% 2% 6% 2%;
+}
+
+
+/*Globales Elementos*/
+
+
 
 h1{
   text-align: center;
@@ -36,11 +45,33 @@ p{
   font-size: 16px;
 }
 
+/*Imagenes*/
 
-section{
-  vertical-align: center;
-  padding: 2% 2% 6% 2%;
+.figure-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+figure{
+  overflow: hidden;
+
+  text-align: center;
+}
+
+@media (min-width: 620px) {
+  figure {
+    column-count: 1;
+    column-gap: 20px;
+  }
+  
+  figure {
+    break-inside: avoid;
+  }
+}
+
+
 
 /******************************************/
 /**********      Panel Titulo   ***********/
@@ -161,30 +192,6 @@ section{
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.figure-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-figure{
-  overflow: hidden;
-
-  text-align: center;
-}
-
-@media (min-width: 620px) {
-  figure {
-    column-count: 1;
-    column-gap: 20px;
-  }
-  
-  figure {
-    break-inside: avoid;
-  }
-}
-
 
 .imagenes {
   padding: 10px;
@@ -215,9 +222,6 @@ img:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.PanelClientes img {
-  width: 100px;
-}
 
 /************************************************/
 /**************    Contactos   ******************/
