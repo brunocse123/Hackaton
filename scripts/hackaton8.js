@@ -1,20 +1,4 @@
 /*
-(function () {
-    if (!console) {
-        console = {};
-    }
-    var old = console.log;
-    var logger = document.getElementById('log');
-    console.log = function (message) {
-        if (typeof message == 'object') {
-            logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : String(message)) + '<br />';
-        } else {
-            logger.innerHTML += message + '<br />';
-        }
-    }
-})();
-*/
-/*
 1. Implementar un algoritmo que reciba 2 argumentos y los sume, el resultado se
 deberá imprimir en pantalla
 */
@@ -192,11 +176,15 @@ function obtenerBono(a) {
 
 console.log("Respuesta 11");
 console.log(
-  `Tengo ${annoAntiguedad} años de antiguedad mi bono es de $${obtenerBono(annoAntiguedad)}`
+  `Tengo ${annoAntiguedad} años de antiguedad mi bono es de $${obtenerBono(
+    annoAntiguedad
+  )}`
 );
 console.log(
-    `Tengo ${annoAntiguedadMayor} años de antiguedad mi bono es de $${obtenerBono(annoAntiguedadMayor)}`
-  );
+  `Tengo ${annoAntiguedadMayor} años de antiguedad mi bono es de $${obtenerBono(
+    annoAntiguedadMayor
+  )}`
+);
 
 /**
  * 12 Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10 % anual
@@ -205,58 +193,50 @@ en cada uno de los 6 años? Realice el algoritmo y representan la solución,
 utilizando el ciclo apropiado
  */
 
- let salarioInicial = 1500;
+let salarioInicial = 1500;
 
- function incrementeoAnual() {
-    for (var i = 1; i <= 6; i++) {
-    
-        salarioInicial = salarioInicial + (salarioInicial * 0.10);
-        console.log(
-            `Año ${i}, su sueldo es ${salarioInicial}`
-          );
-     }
+function incrementeoAnual() {
+  for (var i = 1; i <= 6; i++) {
+    salarioInicial = salarioInicial + salarioInicial * 0.1;
+    console.log(`Año ${i}, su sueldo es ${salarioInicial}`);
   }
+}
 
-  console.log("Respuesta 12");
-  console.log(
-    `Sueldo actual ${salarioInicial}`
-  );
-  incrementeoAnual();
+console.log("Respuesta 12");
+console.log(`Sueldo actual ${salarioInicial}`);
+incrementeoAnual();
 /**
  * 13 Realice un algoritmo para leer las calificaciones de N alumnos y determine el
 número de aprobados y reprobados
  */
-let contAprob= 0;
-let contDesap= 0;
-let fruits = [];
-fruits.push(8);
-fruits.push(12);
-fruits.push(20);
-fruits.push(16);
+let contAprob = 0;
+let contDesap = 0;
+let notas = [];
+notas.push(8);
+notas.push(12);
+notas.push(20);
+notas.push(16);
 
-function aprobados() {
-    fruits.forEach( function(valor, indice, array) {
-        if (valor>10) {
-            contAprob++
-        }
-        if (valor<10) {
-            contDesap++
-        }    
-    });
-    console.log("Hay " + contAprob + " aprobados");
-    console.log("Hay " + contDesap + " desaprobados");
-  }  
-  console.log("Respuesta 13");
-  aprobados();
-
+function resultados() {
+  notas.forEach(function (valor, indice, array) {
+    if (valor > 10) {
+      contAprob++;
+    }
+    if (valor < 10) {
+      contDesap++;
+    }
+  });
+  console.log("Hay " + contAprob + " aprobados");
+  console.log("Hay " + contDesap + " desaprobados");
+}
+console.log("Respuesta 13");
+resultados();
 
 /**
  * 14 Una compañía, fabrica focos de colores (verdes, blancos y rojos). Se desea
 contabilizar, de un lote de N focos, el número de focos de cada color que hay en
 existencia
  */
-
- 
 
 /**
  * 15 Realice un algoritmo para determinar si una persona puede votar con base en
